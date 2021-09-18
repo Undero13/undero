@@ -1,4 +1,4 @@
-const { renderString } = require("template-file");
+const { render } = require("template-file");
 const { readFileSync } = require("fs");
 
 const getFile = (path) => readFileSync(path, { encoding: "utf-8" });
@@ -8,7 +8,7 @@ const getTemplatePath = (data) => {
     case "component":
     case "view":
       return [{
-          content: renderString(
+          content: render(
             getFile(
               __dirname + "/../template/component/component.component.ts"
             ),
@@ -17,7 +17,7 @@ const getTemplatePath = (data) => {
           filename: `${data.path}.${data.what}.ts`,
         },
         {
-          content: renderString(
+          content: render(
             getFile(
               __dirname + "/../template/component/component.component.scss"
             ),
@@ -26,7 +26,7 @@ const getTemplatePath = (data) => {
           filename: `${data.path}.${data.what}.scss`,
         },
         {
-          content: renderString(
+          content: render(
             getFile(
               __dirname + "/../template/component/component.component.vue"
             ),
@@ -35,7 +35,7 @@ const getTemplatePath = (data) => {
           filename: `${data.path}.${data.what}.vue`,
         },
         {
-          content: renderString(
+          content: render(
             getFile(
               __dirname + "/../template/component/component.component.spec.ts"
             ),
@@ -47,14 +47,14 @@ const getTemplatePath = (data) => {
 
     case "service":
       return [{
-          content: renderString(
+          content: render(
             getFile(__dirname + "/../template/service/service.service.ts"),
             data
           ),
           filename: `${data.path}.${data.what}.ts`,
         },
         {
-          content: renderString(
+          content: render(
             getFile(__dirname + "/../template/service/service.spec.ts"),
             data
           ),
@@ -64,42 +64,42 @@ const getTemplatePath = (data) => {
 
     case "store":
       return [{
-          content: renderString(
+          content: render(
             getFile(__dirname + "/../template/store/index.ts"),
             data
           ),
           filename: `index.ts`,
         },
         {
-          content: renderString(
+          content: render(
             getFile(__dirname + "/../template/store/state.ts"),
             data
           ),
           filename: `state.ts`,
         },
         {
-          content: renderString(
+          content: render(
             getFile(__dirname + "/../template/store/actions.ts"),
             data
           ),
           filename: `actions.ts`,
         },
         {
-          content: renderString(
+          content: render(
             getFile(__dirname + "/../template/store/mutations.ts"),
             data
           ),
           filename: `mutations.ts`,
         },
         {
-          content: renderString(
+          content: render(
             getFile(__dirname + "/../template/store/getters.ts"),
             data
           ),
           filename: `getters.ts`,
         },
         {
-          content: renderString(
+          content: render(
             getFile(__dirname + "/../template/store/store.spec.ts"),
             data
           ),
@@ -109,7 +109,7 @@ const getTemplatePath = (data) => {
 
     case "directive":
       return [{
-        content: renderString(
+        content: render(
           getFile(
             __dirname + "/../template/directive/directive.directive.ts"
           ),
@@ -119,14 +119,14 @@ const getTemplatePath = (data) => {
       }, ];
     case "filter":
       return [{
-          content: renderString(
+          content: render(
             getFile(__dirname + "/../template/filter/filter.filter.ts"),
             data
           ),
           filename: `${data.path}.filter.ts`,
         },
         {
-          content: renderString(
+          content: render(
             getFile(__dirname + "/../template/filter/filter.filter.spec.ts"),
             data
           ),

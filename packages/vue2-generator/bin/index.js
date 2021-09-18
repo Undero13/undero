@@ -5,7 +5,6 @@ const path = require("path");
 const fs = require("fs");
 
 const getTemplatePath = require("./get-template-path");
-const args = yargs.argv;
 
 const options = yargs
   .usage("Usage: vue2-generate")

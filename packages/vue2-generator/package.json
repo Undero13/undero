@@ -4,7 +4,7 @@
     "access": "public"
   },
   "version": "1.0.1",
-  "description": "",
+  "description": "Generator components, views and services for vue2",
   "main": "bin/index.js",
   "scripts": {
     "vue2-generate": " node ./bin/index.js",
@@ -17,6 +17,7 @@
     "yargs": "^17.1.1"
   },
   "bin": {
-    "vue2-generate": "./bin/index.js"
-  }
+    "vue2-generate": "bin/index.js"
+  },
+  "devDependencies": {}
 }

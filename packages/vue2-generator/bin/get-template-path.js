@@ -117,6 +117,7 @@ const getTemplatePath = (data) => {
         ),
         filename: `${data.path}.directive.ts`,
       }, ];
+
     case "filter":
       return [{
           content: render(

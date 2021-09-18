@@ -5,10 +5,8 @@ const {{path}}Directive: DirectiveOptions = {
   inserted(el: HTMLElement) {
   },
   bind(el: HTMLElement) {
-    
   },
   unbind(el:HTMLElement) {
-   
   }
 }
 

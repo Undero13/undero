@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-const { renderTemplateFile } = require("template-file");
-
 const yargs = require("yargs");
 const path = require("path");
+const fs = require("fs");
+
 const getTemplatePath = require("./get-template-path");
 const args = yargs.argv;
 
@@ -39,11 +39,7 @@ data.name = nameParts
 
 const files = getTemplatePath(data);
 
-// files.forEach(file => {
-//     fs.mkdirSync(args.path, { recursive: true })
-//     fs.writeFileSync(`${args.path}/${file.filename}`, file.content)
-// })
-
-// function getFile(path) {
-//     return fs.readFileSync(path, { encoding: "utf-8" })
-// }
+files.forEach((file) => {
+  fs.mkdirSync(options.path, { recursive: true });
+  fs.writeFileSync(`${options.path}/${file.filename}`, file.content);
+});

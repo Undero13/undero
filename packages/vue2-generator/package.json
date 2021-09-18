@@ -1,5 +1,8 @@
 {
-  "name": "vue-generator",
+  "name": "@undero/vue2-generator",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "1.0.1",
   "description": "",
   "main": "bin/index.js",

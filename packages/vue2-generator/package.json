@@ -8,7 +8,8 @@
   "main": "bin/index.js",
   "scripts": {
     "vue2-generate": " node ./bin/index.js",
-    "postinstall": "chmod 777 -R ."
+    "postinstall": "chmod 777 -R .",
+    "test": "jest ./__tests__"
   },
   "author": "",
   "license": "ISC",
@@ -19,5 +20,7 @@
   "bin": {
     "vue2-generate": "bin/index.js"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "jest": "^27.2.0"
+  }
 }

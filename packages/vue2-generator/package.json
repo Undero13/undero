@@ -3,7 +3,11 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "1.0.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Undero13/undero"
+  },
+  "version": "1.0.3",
   "description": "Generator components, views and services for vue2",
   "main": "bin/index.js",
   "scripts": {

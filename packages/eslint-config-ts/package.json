@@ -10,7 +10,7 @@
   "peerDependencies": {
     "eslint": ">= 7"
   },
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "My rulset for eslint typescript",
   "main": "index.js",
   "author": "Patryk Loter",

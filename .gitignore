@@ -4,3 +4,4 @@ lerna-debug.log
 **.vscode**
 node_modules
 example
+dist

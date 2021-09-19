@@ -23,6 +23,8 @@ module.exports = {
     'sonarjs/no-duplicate-string': 'off',
     '@typescript-eslint/interface-name-prefix': 'never',
     '@typescript-eslint/explicit-member-accessibility': ['error', { accessibility: 'no-public' }],
+    '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
+    'unused-imports/no-unused-vars': ['warn', { args: 'after-used', argsIgnorePattern: '^_', vars: 'all', varsIgnorePattern: '^_' }],
     'sort-class-members/sort-class-members': [
       2,
       {

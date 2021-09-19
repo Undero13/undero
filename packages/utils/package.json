@@ -1,0 +1,21 @@
+{
+  "name": "@undero/utils",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Undero13/undero"
+  },
+  "version": "1.0.4",
+  "description": "Small pure function for my projects",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "Patyk Loter",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.4.3"
+  }
+}

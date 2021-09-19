@@ -10,7 +10,7 @@
   "peerDependencies": {
     "eslint": ">= 6"
   },
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "My rulset for eslint vue",
   "main": "index.js",
   "author": "Patryk Loter",

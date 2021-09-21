@@ -1,0 +1,30 @@
+{
+  "name": "@undero/vue3-generator",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Undero13/undero"
+  },
+  "version": "1.0.5",
+  "description": "Generator components, views and services for vue2",
+  "main": "bin/index.js",
+  "scripts": {
+    "vue3-generate": " node ./bin/index.js",
+    "postinstall": "chmod 777 -R .",
+    "test": "jest ./__tests__"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "template-file": "^5.1.0",
+    "yargs": "^17.1.1"
+  },
+  "bin": {
+    "vue3-generate": "bin/index.js"
+  },
+  "devDependencies": {
+    "jest": "^27.2.0"
+  }
+}

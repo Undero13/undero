@@ -21,4 +21,4 @@ Insall package using npm:
 
 ## License
 
-MIT
+ISC

@@ -10,7 +10,7 @@
   "peerDependencies": {
     "stylelint": ">= 13"
   },
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "My rulset for stylelint",
   "main": "index.js",
   "author": "Patryk Loter",

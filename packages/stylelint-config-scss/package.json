@@ -1,0 +1,26 @@
+{
+  "name": "@undero/stylelint-config-scss",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Undero13/undero"
+  },
+  "peerDependencies": {
+    "stylelint": ">= 13"
+  },
+  "version": "1.0.6",
+  "description": "My rulset for stylelint",
+  "main": "index.js",
+  "author": "Patryk Loter",
+  "license": "ISC",
+  "dependencies": {
+    "@wemake-services/stylelint-config-scss": "^0.5.0",
+    "stylelint": "^13.9.0",
+    "stylelint-no-nested-media": "^0.1.0",
+    "stylelint-no-unsupported-browser-features": "^5.0.2",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.21.0"
+  }
+}

@@ -18,4 +18,4 @@ Put this in your eslint config
   
 ## License
 
-MIT
+ISC

@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/Undero13/undero"
   },
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Generator components, views and services for vue3",
   "main": "bin/index.js",
   "scripts": {

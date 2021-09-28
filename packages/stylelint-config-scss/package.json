@@ -8,7 +8,7 @@
     "url": "https://github.com/Undero13/undero"
   },
   "peerDependencies": {
-    "stylelint": ">= 13"
+    "stylelint": ">= 11"
   },
   "version": "1.0.7",
   "description": "My rulset for stylelint",

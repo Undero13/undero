@@ -9,10 +9,10 @@ module.exports = {
     'plugin:compat/recommended',
     'plugin:sonarjs/recommended',
     '@vue/typescript/recommended',
-    '@vue/prettier',
-    '@vue/prettier/@typescript-eslint',
+    'plugin:prettier-vue/recommended',
   ],
-  overrides: [{
+  overrides: [
+    {
       env: {
         jest: true,
       },
@@ -32,7 +32,7 @@ module.exports = {
     ecmaVersion: 2020,
   },
   plugins: ['sort-class-members', 'sonarjs', 'sort-keys-fix', 'unused-imports'],
-  root: true,
+  root: false,
   rules: {
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
